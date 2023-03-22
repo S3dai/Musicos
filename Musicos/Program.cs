@@ -37,5 +37,14 @@ class Program
         Musico CodyCarson = new Musico();
         CodyCarson.Saluda();
         CodyCarson.Toca();
+
+        List<Musico> SetitOff = new List<Musico>();
+        SetitOff.Add(new Bajista("Zach DeWall", Fender));
+
+        foreach (var m in SetitOff)
+        m.Saluda();
+
+        foreach (var m in SetitOff)
+        m.Toca();
     }
 }
