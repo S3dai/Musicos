@@ -35,7 +35,6 @@ class Program
     internal static void Main(string[] args)
     {
         Musico CodyCarson = new Musico();
-        CodyCarson.Nombre();
         CodyCarson.Saluda();
         CodyCarson.Toca();
 
