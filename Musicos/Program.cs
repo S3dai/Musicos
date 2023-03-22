@@ -34,7 +34,7 @@ class Program
 {
     internal static void Main(string[] args)
     {
-        Musico CodyCarson = new Musico();
+        Musico CodyCarson = new Musico("Cody Carson");
         CodyCarson.Saluda();
         CodyCarson.Toca();
 
