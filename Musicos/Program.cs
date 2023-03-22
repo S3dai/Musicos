@@ -16,7 +16,7 @@
     }
 }
 
-class Bajista
+class Bajista : Musico
 {
     public string Bajo {get; set;}
 
