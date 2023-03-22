@@ -19,10 +19,15 @@
 class Bajista
 {
     public string Bajo {get; set;}
-    
+
     public Bajista(string n, string b) : base (n)
     {
         Bajo = b;
+    }
+
+    public override void Toca()
+    {
+        Console.WriteLine($"{Nombre} tocando su {Bajo}");
     }
 }
 class Program
