@@ -15,10 +15,22 @@
         Console.WriteLine($"{Nombre} tocando su instrumento");
     }
 }
+
+class Bajista
+{
+    public string Bajo {get; set;};
+
+    public Bajista(string n, string b) : base (n)
+    {
+        Bajo = b;
+    }
+}
 class Program
 {
     internal static void Main(string[] args)
     {
-
+        Musico CodyCarson = new Musico();
+        CodyCarson.Saluda();
+        CodyCarson.Toca();
     }
 }
