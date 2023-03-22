@@ -1,6 +1,6 @@
 ﻿class Musico
 {
-    public string Nombre{get; set}
+    public string Nombre{get; set;}
 
     public Musico(string n)
     {Nombre = n;}
@@ -18,8 +18,8 @@
 
 class Bajista
 {
-    public string Bajo {get; set;};
-
+    public string Bajo {get; set;}
+    
     public Bajista(string n, string b) : base (n)
     {
         Bajo = b;
