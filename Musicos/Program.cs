@@ -2,8 +2,8 @@
 {
     public string Nombre{get; set;}
 
-    public Musico(string n)
-    {Nombre = n;}
+    public Musico(string Nombre)
+    {Nombre = Nombre;}
 
     public void Saluda()
     {
