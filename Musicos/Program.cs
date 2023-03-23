@@ -1,4 +1,4 @@
-﻿class Musico
+﻿abstract class Musico
 {
     public string Nombre{get; set;}
 
@@ -10,10 +10,10 @@
         Console.WriteLine("Hola, soy ");
     }
 
-    public virtual void Toca()
-    {
+    public /*virtual*/ abstract void Toca();
+    /*{
         Console.WriteLine($"{Nombre} tocando su instrumento");
-    }
+    }*/
 }
 
 class Bajista : Musico
@@ -30,13 +30,14 @@ class Bajista : Musico
         Console.WriteLine($"{Nombre} tocando su {Bajo}");
     }
 }
+
 class Program
 {
     internal static void Main(string[] args)
     {
-        Musico CodyCarson = new Musico("Cody Carson");
-        CodyCarson.Saluda();
-        CodyCarson.Toca();
+        Musico Artista = new Musico("Cody Carson");
+        Artista.Saluda();
+        Artista.Toca();
 
         List<Musico> SetitOff = new List<Musico>();
         SetitOff.Add(new Bajista("Zach DeWall", "Fender"));
