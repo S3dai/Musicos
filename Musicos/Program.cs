@@ -32,7 +32,7 @@ class Bajista : Musico
 }
 
 class Program
-{""
+{
     internal static void Main(string[] args)
     {
         Musico Artista = new Musico("Cody Carson");
